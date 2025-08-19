@@ -234,12 +234,17 @@
         }
 
         /* Prevent breaks inside these */
-        table,
         .bank,
         .signature,
         .section {
             page-break-inside: avoid;
         }
+
+        tr {
+            page-break-inside: avoid;
+            /* keeps each row intact */
+        }
+
 
         /* Mobile responsiveness */
         @media (max-width: 600px) {
