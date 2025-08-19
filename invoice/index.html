@@ -267,7 +267,7 @@
 
 <body>
 
-    <h1>Dubbing Invoice Generator</h1>
+    <h1>Dubbing Invoice</h1>
     <div class="form-section">
         <h3>Client Details</h3>
         <label>Choose Client</label>
@@ -287,9 +287,9 @@
 
         <h3>Dubbing Work</h3>
         <div id="dubbingRows"></div>
-        <button type="button" onclick="addRow()">+ Add Dubbing Row</button>
+        <button type="button" onclick="addRow()">Add Dub</button>
 
-        <button type="button" onclick="generateInvoice()">Generate Invoice PDF</button>
+        <button type="button" onclick="generateInvoice()">Generate Invoice</button>
     </div>
 
     <!-- ===== Invoice ===== -->
@@ -450,7 +450,7 @@
             await new Promise(r => requestAnimationFrame(r));
 
             const opt = {
-                filename: "dubbing_invoice.pdf",
+                filename: "JullieDevaaniInvoice.pdf",
                 margin: [10, 10, 10, 10],
                 image: { type: "jpeg", quality: 0.98 },
                 html2canvas: { scale: 2, useCORS: true, scrollX: 0, scrollY: 0 },
