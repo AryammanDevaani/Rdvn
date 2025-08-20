@@ -384,7 +384,7 @@
             <h3>From</h3>
             <p><strong>Jullie Devaani</strong></p>
             <p>7506242650</p>
-            <p>B-70, Vardhman Nagar,<br>Nursing Lane, Malad West,<br>Mumbai-64</p>
+            <p>B-70, Vardhman Nagar<br>Nursing Lane, Malad West<br>Mumbai-64</p>
             <p>jullie.devaani@gmail.com</p>
         </div>
 
@@ -415,10 +415,10 @@
         <div class="bank">
             <strong>Bank Details:</strong>
             <p>Bank of Baroda</p>
-            <p>A/C No: 99730100000419</p>
-            <p>IFSC: BARB0DBMONT (fifth character is zero)</p>
-            <p>Branch: Mount Poinsur</p>
-            <p>UPI No: 7506242650</p>
+            <p><b>A/C No:</b> 99730100000419</p>
+            <p><b>IFSC:</b> BARB0DBMONT (fifth character is zero)</p>
+            <p><b>Branch:</b> Mount Poinsur</p>
+            <p><b>UPI No:</b> 7506242650</p>
         </div>
 
         <div class="signature">Jullie Devaani</div>
@@ -428,7 +428,7 @@
         const clientData = {
             subhash: {
                 name: "Subhash Studios Private Limited",
-                address: "201, Nimbus Centre, Plot Number 69,\nOberoi Complex, Near Laxmi Industrial Estate,\nAndheri West, Mumbai-53, Maharashtra",
+                address: "201, Nimbus Centre, Plot Number 69\nOberoi Complex, Near Laxmi Industrial Estate\nAndheri West, Mumbai-53, Maharashtra",
                 contact: "9930405505",
                 gst: "27AABCS1126R1Z3"
             }
@@ -538,15 +538,16 @@
             await new Promise(r => requestAnimationFrame(r));
 
             const opt = {
-                filename: "JullieDevaaniInvoice.pdf",
+                filename: "Jullie_Devaani_Invoice.pdf",
                 margin: [10, 10, 10, 10],
-                image: { type: "jpeg", quality: 0.98 },
+                image: { type: "jpeg", quality: 1 },
                 html2canvas: { scale: 2, useCORS: true, scrollX: 0, scrollY: 0 },
                 jsPDF: { unit: "pt", format: "a4", orientation: "portrait" },
                 pagebreak: { mode: ["css", "legacy"] }
             };
 
             await html2pdf().set(opt).from(el).save();
+            el.style.display = "none";
         }
 
         window.onload = () => {
