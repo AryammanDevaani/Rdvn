@@ -14,120 +14,146 @@
 
         body {
             font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            background: #f4f6f9;
+            background: linear-gradient(135deg, #e6e9f0 0%, #eef1f5 100%);
             margin: 0;
-            padding: 20px;
-            color: #333;
+            padding: 30px;
+            color: #1a1a1a;
         }
 
         h1 {
             text-align: center;
-            margin-bottom: 20px;
-            color: #2c3e50;
+            margin-bottom: 30px;
+            color: #1a252f;
             font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            font-weight: 600;
+            font-weight: 700;
+            font-size: 32px;
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
         }
 
         .form-section {
-            background: #fff;
-            padding: 20px;
+            background: #ffffff;
+            padding: 30px;
             margin: auto;
-            max-width: 100%;
-            border-radius: 12px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+            border: 1px solid rgba(0, 0, 0, 0.05);
         }
 
         label {
-            font-weight: 500;
+            font-weight: 600;
             display: block;
-            margin-top: 10px;
+            margin-top: 15px;
+            color: #2c3e50;
+            font-size: 14px;
+            letter-spacing: 0.2px;
         }
 
         input,
         select,
         textarea {
             width: 100%;
-            padding: 8px;
-            margin-top: 4px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
+            padding: 12px;
+            margin-top: 6px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
             font-size: 16px;
+            background: #f8fafc;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #4b5ef5;
+            box-shadow: 0 0 0 3px rgba(75, 94, 245, 0.2);
         }
 
         button {
-            background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+            background: linear-gradient(135deg, #4b5ef5 0%, #3b46c4 100%);
             color: white;
             border: none;
-            padding: 12px 20px;
-            border-radius: 8px;
+            padding: 14px 24px;
+            border-radius: 10px;
             cursor: pointer;
-            margin-top: 15px;
+            margin-top: 20px;
             font-size: 16px;
-            font-weight: 500;
+            font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.8px;
             transition: all 0.3s ease;
             width: 100%;
             max-width: 300px;
             display: block;
             margin-left: auto;
             margin-right: auto;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 6px 20px rgba(75, 94, 245, 0.3);
             touch-action: manipulation;
         }
 
         button:hover {
-            background: linear-gradient(135deg, #1a252f 0%, #2c3e50 100%);
+            background: linear-gradient(135deg, #3b46c4 0%, #4b5ef5 100%);
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 8px 25px rgba(75, 94, 245, 0.4);
         }
 
         button:active {
             transform: translateY(0);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 15px rgba(75, 94, 245, 0.2);
         }
 
         .dubbing-row {
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            padding: 15px;
-            margin-top: 15px;
-            background: #fafafa;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+            background: #f9fafb;
+            transition: background 0.2s ease;
+        }
+
+        .dubbing-row:hover {
+            background: #f1f5f9;
         }
 
         .dubbing-row:nth-child(even) {
-            background: #f0f4f8;
+            background: #f3f4f6;
+        }
+
+        .dubbing-row:nth-child(even):hover {
+            background: #eceff1;
         }
 
         .deleteBtn {
-            background: linear-gradient(135deg, #c0392b 0%, #a93226 100%);
+            background: linear-gradient(135deg, #e3342f 0%, #cc1f1a 100%);
             color: white;
             border: none;
-            padding: 8px 16px;
-            border-radius: 6px;
+            padding: 10px 20px;
+            border-radius: 8px;
             cursor: pointer;
             font-size: 14px;
-            font-weight: 500;
+            font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.5px;
             transition: all 0.3s ease;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 15px rgba(227, 52, 47, 0.3);
             display: block;
             width: 100%;
-            max-width: 120px;
-            margin: 10px auto 0;
+            max-width: 140px;
+            margin: 15px auto 0;
             text-align: center;
         }
 
         .deleteBtn:hover {
-            background: linear-gradient(135deg, #a93226 0%, #c0392b 100%);
+            background: linear-gradient(135deg, #cc1f1a 0%, #e3342f 100%);
             transform: translateY(-1px);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 6px 20px rgba(227, 52, 47, 0.4);
         }
 
         .deleteBtn:active {
             transform: translateY(0);
-            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 10px rgba(227, 52, 47, 0.2);
         }
 
         /* ===== Invoice (captured to PDF) ===== */
@@ -136,9 +162,11 @@
             background: #fff;
             width: 100%;
             max-width: 760px;
-            padding: 32px;
+            padding: 40px;
             margin: auto;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
         }
 
         #invoice header {
@@ -146,79 +174,99 @@
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 2px solid #2c3e50;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+            border-bottom: 2px solid #1a252f;
+            padding-bottom: 12px;
+            margin-bottom: 25px;
         }
 
         #invoice header h2 {
             margin: 0;
-            font-size: 26px;
-            color: #2c3e50;
+            font-size: 28px;
+            color: #1a252f;
+            font-weight: 700;
+            letter-spacing: -0.5px;
         }
 
         #invoice header .date {
-            font-size: 12px;
-            color: #555;
+            font-size: 13px;
+            color: #4b5ef5;
+            font-weight: 500;
         }
 
         .section {
-            margin-top: 15px;
+            margin-top: 20px;
         }
 
         .section h3 {
-            margin-bottom: 8px;
-            font-size: 15px;
-            color: #2c3e50;
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 4px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #1a252f;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 6px;
+            font-weight: 600;
         }
 
         .section p {
-            margin: 2px 0;
-            font-size: 12px;
+            margin: 3px 0;
+            font-size: 13px;
             white-space: pre-line;
+            color: #2d3748;
+        }
+
+        .gst-label {
+            font-weight: 600;
+            display: inline;
+            margin-right: 5px;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
+            margin-top: 25px;
         }
 
         th,
         td {
-            border: 1px solid #ccc;
-            padding: 6px;
+            border: 1px solid #e5e7eb;
+            padding: 10px;
             text-align: left;
-            font-size: 12px;
+            font-size: 13px;
         }
 
         th {
-            background: #2c3e50;
+            background: #1a252f;
             color: #fff;
-            font-size: 13px;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+        }
+
+        td {
+            background: #f9fafb;
         }
 
         .total {
             text-align: right;
-            font-weight: bold;
-            padding: 10px 0 0;
-            font-size: 14px;
-            border-top: 2px solid #2c3e50;
+            font-weight: 700;
+            padding: 12px 0 0;
+            font-size: 15px;
+            border-top: 2px solid #1a252f;
+            color: #1a252f;
         }
 
         .bank,
         .signature {
-            margin-top: 30px;
-            font-size: 12px;
+            margin-top: 35px;
+            font-size: 13px;
+            color: #2d3748;
         }
 
         .signature {
             text-align: right;
-            font-weight: bold;
-            margin-top: 60px;
-            font-size: 14px;
+            font-weight: 700;
+            margin-top: 70px;
+            font-size: 15px;
+            color: #1a252f;
         }
 
         /* Prevent breaks inside these */
@@ -232,33 +280,41 @@
         /* Mobile responsiveness */
         @media (max-width: 600px) {
             body {
-                padding: 10px;
+                padding: 15px;
             }
 
             h1 {
-                font-size: 20px;
+                font-size: 24px;
+            }
+
+            .form-section {
+                padding: 20px;
             }
 
             input,
             select,
             textarea {
                 font-size: 14px;
-                padding: 6px;
+                padding: 10px;
             }
 
             button {
                 font-size: 14px;
-                padding: 10px;
+                padding: 12px;
             }
 
             .dubbing-row {
-                padding: 10px;
+                padding: 15px;
             }
 
             .deleteBtn {
                 font-size: 12px;
-                padding: 6px;
-                max-width: 100px;
+                padding: 8px;
+                max-width: 120px;
+            }
+
+            #invoice {
+                padding: 20px;
             }
 
             #invoice header {
@@ -304,20 +360,20 @@
 
         <div class="section">
             <h3>From</h3>
-            <p><strong>Jullie Devaani</strong></p>
-            <p>7506242650</p>
-            <p>B-70, Vardhman Nagar,</p>
-            <p>Nursing Lane, Malad West,</p>
-            <p>Mumbai-64</p>
-            <p>jullie.devaani@gmail.com</p>
+            <p><strong>Jullie Devaani</strong><br></p>
+            <p>7506242650<br></p>
+            <p>B-70, Vardhman Nagar,<br></p>
+            <p>Nursing Lane, Malad West,<br></p>
+            <p>Mumbai-64<br></p>
+            <p>jullie.devaani@gmail.com<br></p>
         </div>
 
         <div class="section">
             <h3>Bill To</h3>
-            <p><strong id="outClientName"></strong></p>
-            <p id="outClientContact"></p>
-            <p id="outClientAddress"></p>
-            <p id="outClientGST"></p>
+            <p><strong id="outClientName"></strong><br></p>
+            <p id="outClientContact"><br></p>
+            <p id="outClientAddress"><br></p>
+            <p><span class="gst-label">GSTIN:</span> <span id="outClientGST"></span><br></p>
         </div>
 
         <table>
@@ -419,7 +475,11 @@
                     alert("All dubbing rows must have a date filled in.");
                     return false;
                 }
-                const date = dateEl.value;
+                const date = new Date(dateEl.value).toLocaleDateString("en-GB", {
+                    day: "2-digit",
+                    month: "2-digit",
+                    year: "numeric"
+                }).split("/").join("-");
                 const series = getValueOrDash(r.querySelector(".seriesName"));
                 const chars = getValueOrDash(r.querySelector(".characters"));
                 const dir = getValueOrDash(r.querySelector(".director"));
@@ -439,7 +499,11 @@
             if (!fillInvoiceTable()) return;
 
             document.getElementById("invoiceDate").textContent =
-                new Date().toLocaleDateString("en-IN");
+                new Date().toLocaleDateString("en-GB", {
+                    day: "2-digit",
+                    month: "2-digit",
+                    year: "numeric"
+                }).split("/").join("-");
             document.getElementById("outClientName").textContent =
                 getValueOrDash(document.getElementById("clientName"));
             document.getElementById("outClientContact").textContent =
