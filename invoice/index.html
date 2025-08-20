@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Dubbing Invoice Generator</title>
+    <title>Dubbing Invoice</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <link rel="stylesheet" href="https://developer.apple.com/fonts/sf-pro.css">
@@ -277,7 +277,7 @@
         <label>Choose Client</label>
         <select id="clientSelect" onchange="fillClientData()">
             <option value="new">New Client</option>
-            <option value="subhash">Subhash Studios Pvt Ltd</option>
+            <option value="subhash">Subhash Studios Private Limited</option>
         </select>
 
         <label>Client Name</label>
@@ -340,7 +340,7 @@
             <strong>Bank Details:</strong><br>
             Bank of Baroda<br>
             A/C No: 99730100000419<br>
-            IFSC: BARB0DBMONT<br>
+            IFSC: BARB0DBMONT (fifth character is zero)<br>
             Branch: Mount Poinsur<br>
             UPI No: 7506242650
         </div>
@@ -351,7 +351,7 @@
     <script>
         const clientData = {
             subhash: {
-                name: "Subhash Studios Pvt Ltd",
+                name: "Subhash Studios Private Limited",
                 address: "201, Nimbus Centre, Plot Number 69,\nOberoi Complex, Near Laxmi Industrial Estate,\nAndheri West, Mumbai-53, Maharashtra",
                 contact: "9930405505",
                 gst: "27AABCS1126R1Z3"
