@@ -27,14 +27,6 @@ body {
   position: relative;
   padding-bottom: 4rem;
 }
-
-header {
-  font-size: 6rem;
-  font-weight: 900;
-  letter-spacing: 0.5px;
-  top: 1.5rem;
-}
-
 /* Tweet screenshots layout */
 .tweets {
   margin-top: 2rem;
